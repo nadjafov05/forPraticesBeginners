@@ -1,12 +1,21 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-
+       
     }
 
-    public static void tapsiriq13(){
-        for (int i=1;i<=5;i++){
-            for (int j=1;j<=5;j++){
-                if (j == 1 || i == j || i == 5){
+    public static void tapsiriq13inScannerDynamic(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("i daxil edin (alt alta ne qeder olacaq? )");
+        int alt = sc.nextInt();
+
+        System.out.println("ulduz sayini daxil edin: ");
+        int ulduz = sc.nextInt();
+
+        for (int i = 1;i<= alt;i++){
+            for (int j=1;j<=ulduz;j++){
+                if (j == 1 || i == j || i == alt){
                     System.out.print("*");
                 }else {
                     System.out.print(" ");
